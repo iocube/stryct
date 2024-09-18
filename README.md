@@ -1,0 +1,2 @@
+# stryct
+String encryption program
