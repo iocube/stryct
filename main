@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Input keypair
+# or read keypair from cfg / previous
+
+function init_check{};
+function parse_config{};
+function loadkey {};
+
+function s_encrypt {
+    echo "Using key"
+}
+
+function s_decrypt {
+
+}
+#Choose mode
+echo "Choose mode:
+- 1) Encrypt
+- 2) Decrypt
+"
+read -p "Choice: " mode_choice
+case $mode_choice in 
+    1)
+        echo "Encryption mode."
+        ;;
+    2)
+        echo "Decryption mode."
+        ;;
+    *)
+        echo "Invalid mode choice." ; exit 1
+        ;;
+esac
+# Choose function
+# encrypt or decrypt
