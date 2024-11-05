@@ -14,7 +14,7 @@ echo "Loading private key."
 privatekey="${script_dir}/id_rsa"
 
 # Check if private key exists
-if [[ ! -f ${script_dir}/id_rsa]];then
+if [[ ! -f ${script_dir}/id_rsa ]]; then
     echo "Private key not found."
     read -p "Generate new keypair? [Y/N]" genkey_choice
     case "$genkey_choice" in
