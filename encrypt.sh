@@ -82,7 +82,7 @@ echo "Ciphertext stored in ${ciphertext_loc}"
 
 decryptedtext_loc="$working_dir/decryptedtext"
 
-decrypted=$(openssl pkeyutl -decrypt -inkey "$privatekey" -in ciphertext -out "$decryptedtext_loc" ; cat "$decryptedtext_loc")
+decrypted=$(openssl pkeyutl -decrypt -inkey "$privatekey" -in "$ciphertext_loc" -out "$decryptedtext_loc" ; cat "$decryptedtext_loc")
 #openssl pkcs8 -topk8 -in my.key -out my.pkcs8.key -nocrypt
 
 echo "Decrypted text is: ${decrypted}"
