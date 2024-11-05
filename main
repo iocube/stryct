@@ -2,6 +2,9 @@
 
 # Input keypair
 # or read keypair from cfg / previous
+echo "This program accepts keypairs stored in the PKCS #8 syntax."
+#TODO: test whether provided keys are in pkcs8 or pkcs1, convert or exit accordingly
+
 
 function init_check{};
 function parse_config{};
