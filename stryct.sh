@@ -26,7 +26,7 @@ function choose_mode {
 echo "Choose mode:
 - 1) Encrypt
 - 2) Decrypt
-Currenttly unavailable:
+Currently unavailable:
 $(if [[ $using_tmpkeypair -eq '1' ]]; then echo "- 3) Use temporary keypair (auto-generate)" ; else echo "- 3) Use existing keypair (currently using temporary) " ; fi )
 "
 read -p "Choice: " mode_choice
