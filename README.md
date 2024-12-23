@@ -4,7 +4,7 @@
 <h2>Encrypt or decrypt plaintext strings using various cryptography functions.</h2>
 </div>
 
-#### A utility for encryption and decryption of text or data. To be used for secure transfer of confidential data over unencrypted channels.
+#### An interactive utility for assymetric encryption and decryption of text or data. Can be used for secure transfer of data over unencrypted channels.
 
 Current progress:  
 2024-12-23  
