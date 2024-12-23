@@ -8,9 +8,7 @@
 
 Current progress:  
 2024-12-23  
-[output2.webm](https://github.com/user-attachments/assets/60384159-2dad-45e5-9acc-89a87555f441)
-</br>
-![output](https://github.com/user-attachments/assets/d1e88c36-dcb2-4241-885d-9911afed2a47)
+![output4](https://github.com/user-attachments/assets/f25c880b-de78-4aad-9c45-82ee88563b48)
 </br>
 2024-11-05  
 ![output](https://github.com/user-attachments/assets/1cc8895a-4a6c-4d51-8cc8-4a25a860ce80)
