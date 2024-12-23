@@ -6,10 +6,11 @@
 
 #### A utility for encryption and decryption of text or data. To be used for secure transfer of confidential data over unencrypted channels.
 
-Current progress:
-2024-12-23
+Current progress:  
+2024-12-23  
 ![output](https://github.com/user-attachments/assets/d1e88c36-dcb2-4241-885d-9911afed2a47)
-2024-11-05
+</br>
+2024-11-05  
 ![output](https://github.com/user-attachments/assets/1cc8895a-4a6c-4d51-8cc8-4a25a860ce80)
 
 
