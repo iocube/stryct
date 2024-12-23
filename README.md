@@ -4,14 +4,20 @@
 <h2>Encrypt or decrypt plaintext strings using various cryptography functions.</h2>
 </div>
 
-#### An utility for encryption and decryption of text or data. To be used for secure transfer of confidential data over unencrypted channels.
+#### A utility for encryption and decryption of text or data. To be used for secure transfer of confidential data over unencrypted channels.
 
 Current progress:
 ![output](https://github.com/user-attachments/assets/1cc8895a-4a6c-4d51-8cc8-4a25a860ce80)
 
 
+#### Theory and usage:
+User 1 shares his public key via non-encrypted channel with User 2.  
+User 2 uses User 1's public key to encrypt a message. The ciphertext is then converted to base64.  
+The encrypted message (in base64) is then sent to User 1 once again over an unencrypted channel.  
+User 1 decrypts the message using his private key.  
+</br>
 TODO:
-- plan for keypair usage in real scenarioes (currently we are working with our own keypair)
-- separate encryption and decryption (related to the above)
-- rewrite main.sh to undertake the role of an interactive main menu
+- adjust ease of use for message sender
+- ~~separate encryption and decryption (related to the above)~~
+- ~~rewrite main.sh to undertake the role of an interactive main menu~~
 - add signing and signing verification
