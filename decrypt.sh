@@ -64,20 +64,7 @@ fi
 
 ## Main
 
-read -p "Input plaintext: " plaintext
-echo "Plaintext is: ${plaintext}"
-
-ciphertext_loc="$working_dir/ciphertext"
-
-ciphertext=$( echo ${plaintext} | openssl pkeyutl -encrypt -pubin -inkey "$publickey" -out "$ciphertext_loc")
-#ssh-keygen -f ~/.ssh/id_rsa.pub -e -m pkcs8 > ~/.ssh/id_rsa.pub.pkcs8
-echo "Ciphertext in Base64 is: $(cat "$ciphertext_loc" | base64 )"
-echo "Ciphertext stored in ${ciphertext_loc}"
-
-decryptedtext_loc="$working_dir/decryptedtext"
-
 decrypted=$(openssl pkeyutl -decrypt -inkey "$privatekey" -in "$ciphertext_loc" -out "$decryptedtext_loc" ; cat "$decryptedtext_loc")
-#openssl pkcs8 -topk8 -in my.key -out my.pkcs8.key -nocrypt
 
 echo "Decrypted text is: ${decrypted}"
 echo "Decrypted text stored in ${decryptedtext_loc}"
