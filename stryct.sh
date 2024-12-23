@@ -6,25 +6,21 @@ source config.sh
 ## Pre-checks
 # Input keypair
 # or read keypair from cfg / previous
-echo "This program accepts keypairs stored in the PKCS #8 syntax."
 #TODO: test whether provided keys are in pkcs8 or pkcs1, convert or exit accordingly
 
-
-
-
-
 function init_check {
-    which ssh-keygen ; echo $?
-    which openssl ; echo $?
+    function check_program {
+	    program_name="$1"
+	    check_program_result=$(which "$program_name")
+	    if [[ -z "$check_program_result" ]];then
+		    echo "Error with local binary of ${program_name} "
+		    exit 1
+	    fi
+    }
+    
+    check_program ssh-keygen 
+    check_program openssl
 }
-
-#function parse_config {}  #TODO: define config
-
-#function loadkey {};
-
-#function s_encrypt {};
-
-#function s_decrypt {}
 
 function choose_mode {
 echo "Choose mode:
@@ -65,4 +61,6 @@ esac
 # encrypt or decrypt
 
 # Main
+init_check
+echo "This program accepts keypairs stored in the PKCS #8 syntax."
 choose_mode
