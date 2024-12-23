@@ -43,7 +43,14 @@ case $mode_choice in
         echo "Decryption mode."
 	echo "Encrypted text must be stored in ${ciphertext_loc} "
 	read -p "Continue? [Y/N] " continue_choice
-	"$script_dir"/"decrypt.sh"
+	case "$continue_choice" in
+	    [Yy])			
+                "$script_dir"/"decrypt.sh"
+		;;
+	    *)
+		echo "Exiting." && exit 0
+		;;
+	esac
         ;;
     3)
 	echo "Using temporary keypair."
