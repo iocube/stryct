@@ -71,7 +71,8 @@ ciphertext_loc="$working_dir/ciphertext"
 
 ciphertext=$( echo ${plaintext} | openssl pkeyutl -encrypt -pubin -inkey "$publickey" -out "$ciphertext_loc")
 #ssh-keygen -f ~/.ssh/id_rsa.pub -e -m pkcs8 > ~/.ssh/id_rsa.pub.pkcs8
-echo "Ciphertext in Base64 is: $(cat "$ciphertext_loc" | base64 )"
+echo "Ciphertext in Base64 is:"
+echo "$(cat "$ciphertext_loc" | base64 )"
 echo "Ciphertext stored in ${ciphertext_loc}"
 
 decryptedtext_loc="$working_dir/decryptedtext"
