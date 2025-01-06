@@ -18,8 +18,8 @@ User 1 decrypts the message using his private key.
 Clone repository and run 'stryct.sh'  
 
 </br>
-TODO:  
-- adjust ease of use for message sender  
-- ~~separate encryption and decryption (related to the above)~~  
-- ~~rewrite main.sh to undertake the role of an interactive main menu~~  
-- add signing and signing verification  
+TODO: </br>
+- adjust ease of use for message sender </br>
+- <del>separate encryption and decryption (related to the above)</del> </br>
+- <del>rewrite main.sh to undertake the role of an interactive main menu</del> </br>
+- add signing and signing verification </br>
