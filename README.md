@@ -2,7 +2,7 @@
 <h2>Encrypt or decrypt plaintext strings using various cryptography functions.</h2>
 </div>
 
-#### An interactive utility for assymetric encryption and decryption of text or data. Can be used for secure transfer of data over unencrypted channels.
+#### An interactive utility for asymetric encryption and decryption of text or data. Can be used for secure transfer of data over unencrypted channels.
 
 ![output5](https://github.com/user-attachments/assets/029d7dc8-1fb7-4072-9373-28c9577c9897)
 
@@ -18,8 +18,8 @@ User 1 decrypts the message using his private key.
 Clone repository and run 'stryct.sh'  
 
 </br>
-TODO:
-- adjust ease of use for message sender
-- ~~separate encryption and decryption (related to the above)~~
-- ~~rewrite main.sh to undertake the role of an interactive main menu~~
-- add signing and signing verification
+TODO:  
+- adjust ease of use for message sender  
+- ~~separate encryption and decryption (related to the above)~~  
+- ~~rewrite main.sh to undertake the role of an interactive main menu~~  
+- add signing and signing verification  
